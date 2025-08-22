@@ -5,7 +5,7 @@ const adicionalNoturno = readlineSync.questionInt('Digite o valor do adicional n
 const horaExtra = readlineSync.questionInt('Digite o valor das horas extras: R$ ');
 const descontos = 300; // quis deixar esse valor como padrão
 
-const salarioLiquido = salarioBase + adicionalNoturno + horaExtra - descontos;
+const salarioLiquido = salarioBase + adicionalNoturno + (horaExtra * 5) - descontos;
 
 console.log(`\n Detalhes do seu salário:`);
 console.log(`Salário base: R$ ${salarioBase}`);
